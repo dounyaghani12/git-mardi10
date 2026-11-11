@@ -9,10 +9,10 @@
  <h1>Formulaire d'inscription Freelance-Connect</h1>
 
  <from action="/traitement" method="post" enctype="multipart/form-data">
- <fieldset> 
+ <!-- Section 1 : Identité et Sécurité -->
+ <fieldset>
  <legend>Section 1 : Identité et Sécurité</legend>
-<input type="hidden" name="source" value="inscription"_web> 
-</fieldset> 
+<input type="hidden" name="source" value="inscription"_web>  
 <div> 
 <label for="prenom">Prénom :</label>
 <input type="text" id="prenom" name="prenom" required autofocus>
@@ -79,11 +79,11 @@
         <input type="radio" id="auto_entrepreneur" name="statut_juridique" value="auto_entrepreneur" required>
         <label for="auto_entrepreneur">Auto-entrepreneur</label> 
 
-        <input type="radio" id="statut2" name="statut_juridique" value="sarl">
-        <label for="statut2">SARL</label>
+        <input type="radio" id="statut2" name="statut_juridique" value="sasu">
+        <label for="statut2">SASU</label>
 
-        <input type="radio" id="statut3" name="statut_juridique" value="sarl"> 
-        <label for="statut3">SA</label> 
+        <input type="radio" id="statut3" name="statut_juridique" value="eurl"> 
+        <label for="statut3">EURL</label> 
     </div> 
     <br> 
     <label for="region">Région d'intervention :</label>
@@ -111,7 +111,7 @@
     <br>
     <div>
         <label for="audit">Dernier audit technique :</label>
-        <input type="text" id="audit" name="audit" value="Nom réalisé" readonly> 
+        <input type="text" id="audit" name="audit" value="Non réalisé" readonly> 
     </div>
     <br>
     <div>
