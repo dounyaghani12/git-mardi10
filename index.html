@@ -23,7 +23,7 @@
     <input type="text" id="nom" name="nom" placeholder="DUPONT" required>
 </div> 
 <br>
-<fiel> 
+<fieldset> 
     <label for="mot_de_passe">Mot de passe (8 caractères minimum) :</label> 
     <input type="password" id="mot_de_passe" name="mot_de_passe" minlength="8" required> 
     <br> 
@@ -54,12 +54,12 @@
     <legend>Section 3 : Informations professionnelles</legend>
     <div> 
         <label for="experience">Années d'experience</label>
-        <inpout type="number" id="experience" name="experience" min="0" max="50" required>
+        <input type="number" id="experience" name="experience" min="0" max="50" required>
     </div>
     <br>
     <div> 
         <label for="seniorite">Niveau de séniorité (1 à 5) :</label>
-        <input type="range" id="seniorite" name="seniorite" min="1" max="5"
+        <input type="range" id="seniorite" name="seniorite" min="1" max="5" required>
     </div>
     <br> 
     <div> 
@@ -96,9 +96,39 @@
         <optgroup label="Group Sud"> 
             <option value="paca">Province-Alpes-Côte</option> 
             <option value="occitanie">Occitanie</option>
-        </optgroup>
-    </select>
- </div>
+        </optgroup> 
+    </select> 
+ </div> 
+ </fieldset> 
+ <!-- Section 4 : Disponibilités et Finalisation --> 
+  <fieldset> 
+    <legend>Section 4 : Disponibilités et Finalisation</legend>
+
+    <div> 
+        <label for="dispo">Date de Disponibilités :</label>
+        <input type="date" id="dispo" name="dispo" required> 
+    </div>
+    <br>
+    <div>
+        <label for="audit">Dernier audit technique :</label>
+        <input type="text" id="audit" name="audit" value="Nom réalisé" readonly> 
+    </div>
+    <br>
+    <div>
+        <label for="motivation">Motivation :</label><br>
+        <textarea id="motivation" name="motivation" rows="8" maxlength="500" placeholder="Expliquez votre motivation pour rejoindre Freelance-Connect"></textarea>
+    </div> 
+    <br>
+    <div> 
+        <input type="checkbox" id="cgu" name="cgu" required>
+        <label for="cgu ">J'accepte les conditions générales d'utilisation (CGU)</label>
+        </div>
+        
+        <br>
+        <div> 
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+        </div>
  </fieldset>
  </form>
 </body>
