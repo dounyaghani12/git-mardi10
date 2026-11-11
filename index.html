@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Formulaire d'inscription Freelance-Connect</h1>
+
+ <from action="/traitement" method="post" enctype="multipart/form-data">
+ <fieldset> 
+ <legend>Section 1 : Identité et Sécurité</legend>
+<input type="hidden" name="source" value="inscription"_web> 
+</fieldset> 
+<div> 
+<label for="prenom">Prénom :</label>
+<input type="text" id="prenom" name="prenom" required autofocus>
+</div> 
+<br> 
+<div> 
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" placeholder="DUPONT" required>
+</div> 
+<br>
+<fiel> 
+    <label for="mot_de_passe">Mot de passe (8 caractères minimum) :</label> 
+    <input type="password" id="mot_de_passe" name="mot_de_passe" minlength="8" required> 
+    <br> 
+    <div> 
+    <label for="photo_profil">Photo de profil :</label>
+    <input type="file" id="photo_profil" name="photo_profil" accept=".png, .jpg, .jpg, jpeg">
+    </div> 
+    </fieldset> 
+</div> 
+<fieldset> 
+    <legend>Section 2 : Contact et Profil</legend>
+    <div> 
+        <label for="email_pro">Email professionnel :</label>
+        <input type="email" id="email_pro" name="email_pro" required>
+    </div>
+    <br>
+    <div> 
+        <label for="telephone">Numéro de téléphone (10 chiffres) :</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="0123456789" required> 
+    </div>
+    <br>
+    <div> 
+        <label for="site_web">Couleur du thème :</label>
+        <input type="url" id="site_web" name="site_web" placeholder="https://www.monsite.com">
+</fieldset>
+ </from>
+</body>
+</html> 
