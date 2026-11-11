@@ -49,6 +49,57 @@
         <label for="site_web">Couleur du thème :</label>
         <input type="url" id="site_web" name="site_web" placeholder="https://www.monsite.com">
 </fieldset> 
- </from>
+
+ <fieldset> 
+    <legend>Section 3 : Informations professionnelles</legend>
+    <div> 
+        <label for="experience">Années d'experience</label>
+        <inpout type="number" id="experience" name="experience" min="0" max="50" required>
+    </div>
+    <br>
+    <div> 
+        <label for="seniorite">Niveau de séniorité (1 à 5) :</label>
+        <input type="range" id="seniorite" name="seniorite" min="1" max="5"
+    </div>
+    <br> 
+    <div> 
+        <label>Langages maîtrisés :</label><br>
+        <input type="checkbox" id="lang1" name="langages[]" value="HTML" checked>
+        <label for="lang1">HTML</label><br>
+        <input type="checkbox" id="lang2" name="langages[]" value="CSS">
+        <label for="lang2">CSS</label><br> 
+        <input type="checkbox" id="lang3" name="langages[]" value="JavaScript">
+        <label for="lang3">JavaScript</label><br> 
+        <input type="checkbox" id="lang4" name="langages[]" value="Python">
+        <label for="lang4">Python</label><br>
+    </div>
+    <br>
+    <div> 
+        <label>Statut juridique :</label><br>
+        <input type="radio" id="auto_entrepreneur" name="statut_juridique" value="auto_entrepreneur" required>
+        <label for="auto_entrepreneur">Auto-entrepreneur</label> 
+
+        <input type="radio" id="statut2" name="statut_juridique" value="sarl">
+        <label for="statut2">SARL</label>
+
+        <input type="radio" id="statut3" name="statut_juridique" value="sarl"> 
+        <label for="statut3">SA</label> 
+    </div> 
+    <br> 
+    <label for="region">Région d'intervention :</label>
+    <select id="region" name="region"> 
+        <option value="">--Sélectionnez une région</option>
+        <optgroup label="Group Nord"> 
+            <option value="ile-de-france">Île-de-France</option>
+            <option value="hauts-de-france">Hauts-de-France</option>
+        </optgroup> 
+        <optgroup label="Group Sud"> 
+            <option value="paca">Province-Alpes-Côte</option> 
+            <option value="occitanie">Occitanie</option>
+        </optgroup>
+    </select>
+ </div>
+ </fieldset>
+ </form>
 </body>
 </html> 
